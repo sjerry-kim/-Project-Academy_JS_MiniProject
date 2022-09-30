@@ -1,0 +1,40 @@
+<!--2022.09.30.(금)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--시계-->
+    <h1 id="clock">00:00:00</h1>
+
+    <!--로그인-->
+    <form action="" id="login-form">
+        <input type="text" id="name">
+        <input type="button" value="Login">
+    </form>
+
+    <!--투두 입력 공간-->
+    <form action="" id="todo-form">
+        <h1 id="title">반갑습니다</h1>
+        <input type="text" id="todo">
+        <input type="button" value="Add">
+    </form>
+
+    <!--투두 폼 출력-->
+    <ul id="todo-board">
+        <li>
+            <input type="checkbox">
+            첫번째
+            <button>X</button>
+        </li>
+    </ul>
+
+    <script src="./js/background.js" defer></script>
+    <script src="./js/clock.js" defer></script>
+</body>
+</html>
