@@ -39,6 +39,9 @@ function addTodo(){
 
     // 체크박스를 눌렀을 때 이벤트 리스너 실행 : click
     checkbox.addEventListener("click", todoCheck); // 함수를 안에서 작성해도 되지만, 바깥에 작성해도 된다
+
+    // X버튼을 눌렀을 때 이벤트 리스너 실행 : click
+    button.addEventListener("click", todoDelete);
 }
 
 // 체크박스 이벤트 리스너에 들어가는 함수
@@ -49,4 +52,11 @@ function todoCheck(e){
     }else{
         li.style.color = "black";
     }
+}
+
+// X버튼 리스너에 들어갈 함수
+function todoDelete(e){
+    // li요소를 삭제
+    const li = e.target.parentNode;
+    li.remove();
 }
