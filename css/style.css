@@ -1,0 +1,7 @@
+.hidden {
+    display: none; /* hidden과 none의 차이점 구분하기!*/
+}
+
+.clock {
+    color: whitesmoke;
+}
