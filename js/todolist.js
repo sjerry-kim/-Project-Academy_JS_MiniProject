@@ -31,6 +31,9 @@ function addTodo(){
     // todoBoard - li 추가
     todoBoard.appendChild(li);
 
+    li.style.fontFamily = "Roboto";
+    li.style.fontFamily = "Nanum Gothic"
+
     // todoInput.value 값을 빈값으로 만들기
     todoInput.value = "";
 
@@ -48,9 +51,13 @@ function addTodo(){
 function todoCheck(e){
     const li = e.target.parentNode;
     if(e.target.checked){
-        li.style.color = "lightgray"; // 여러 속성을 바꾸고 싶을 때는 css에 class를 추가해서 작성해도 됨
+        li.style.textDecorationLine = "line-through";
+        li.style.fontStyle = "italic";
+        li.style.color = "rgb(180,180,180)" // 여러 속성을 바꾸고 싶을 때는 css에 class를 추가해서 작성해도 됨
     }else{
-        li.style.color = "black";
+        li.style.textDecorationLine = "none";
+        li.style.fontStyle = "normal";
+        li.style.color = "ivory";
     }
 }
 
